@@ -1,0 +1,94 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.calculator {
+    width: 300px; 
+    height: 450px; 
+    background-color: #1e1e1e; 
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Display Container */
+.display {
+    width: 270px;
+    height: 70px;
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Button Container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button Style */
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%; /* Circular buttons */
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Numbers */
+.button-number {
+    background-color: #3a3a3a; /* Gray */
+    color: white;
+}
+
+.button-number:hover {
+    background-color: #575757;
+}
+
+/* Operators */
+.button-operation {
+    background-color: #ff9500;
+    color: white;
+}
+
+.button-operation:hover {
+    background-color: #e07b00;
+}
+
+/* Special */
+.button-spec {
+    background-color: #606060; 
+    color: white;
+}
+
+.button-spec:hover {
+    background-color: #757575;
+}
+
+/* AC */
+#btn-backspace {
+    background-color: #ff3b30; 
+}
+
+#btn-backspace:hover {
+    background-color: #e02c20;
+}
